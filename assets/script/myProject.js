@@ -186,10 +186,12 @@ const ProjectCard = ({
         src="${src}"
         alt="${title}"
       />
-      <h2>${title}</h2>
-      <p>Duration: ${duration}</p>
     </header>
     <div class="card-body">
+    <div class="title">
+    <h2>${title}</h2>
+    <p>Duration: ${duration}</p>
+    </div>
       <p>
         ${description}
       </p>
