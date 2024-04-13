@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Project</title>
+    <link rel="stylesheet" href="./assets/css/navbar.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/input.css" />
+    <link rel="stylesheet" href="./assets/css/project.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul class="nav-list">
+          <li>
+            <img
+              src="./assets/img/du.png"
+              alt="Dumbways icon"
+              class="nav-brand"
+            />
+          </li>
+          <li>
+            <a href="./index.html" class="nav-link">Home</a>
+          </li>
+          <li>
+            <a href="./myProject.html" class="nav-link">My Project</a>
+          </li>
+        </ul>
+        <a href="./contactForm.html" class="contact-button">Contact Me</a>
+      </nav>
+    </header>
+    <main class="container">
+      <form action="" class="form" id="add-project-form">
+        <h1>ADD MY PROJECT</h1>
+        <div class="input-wrapper">
+          <label for="projectName">Project Name</label>
+          <input type="text" name="projectName" id="projectName" />
+          <p class="error-message"></p>
+        </div>
+        <div style="display: flex; gap: 0.5rem; width: 100%">
+          <div class="input-wrapper">
+            <label for="startDate">Start Date</label>
+            <input type="date" name="startDate" id="startDate" />
+            <p class="error-message"></p>
+          </div>
+          <div class="input-wrapper">
+            <label for="endDate">End Date</label>
+            <input type="date" name="endDate" id="endDate" />
+            <p class="error-message"></p>
+          </div>
+        </div>
+        <div class="input-wrapper">
+          <label for="description">Description</label>
+          <textarea name="description" id="description" rows="8"></textarea>
+          <p class="error-message"></p>
+        </div>
+        <div
+          style="
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+          "
+        >
+          <h3 style="margin-bottom: 0.75rem">Technologies</h3>
+          <div class="checkbox-group" id="technologies">
+            <div class="checkbox-wrapper">
+              <input type="checkbox" id="nodejs" />
+              <label for="nodejs">Node JS</label>
+            </div>
+            <div class="checkbox-wrapper">
+              <input type="checkbox" id="nextjs" />
+              <label for="nextjs">Next JS</label>
+            </div>
+            <div class="checkbox-wrapper">
+              <input type="checkbox" id="react" />
+              <label for="react">React JS</label>
+            </div>
+            <div class="checkbox-wrapper">
+              <input type="checkbox" id="ts" />
+              <label for="ts">Typescript</label>
+            </div>
+          </div>
+          <p class="error-message"></p>
+        </div>
+        <div class="input-wrapper">
+          <label for="image">Upload Image</label>
+          <input type="file" id="image" name="image" />
+          <p class="error-message"></p>
+        </div>
+        <button class="button button-dark end fw-bold">Submit</button>
+      </form>
+      <div class="projects">
+        <h1 class="fw-900">MY PROJECT</h1>
+        <div class="project-lists" id="project-lists"></div>
+      </div>
+    </main>
+    <script type="text/javascript" src="./assets/script/myProject.js"></script>
+  </body>
+</html>

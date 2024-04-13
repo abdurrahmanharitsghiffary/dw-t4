@@ -1,0 +1,53 @@
+.container {
+  background-color: white;
+  max-width: 850px;
+  width: 90%;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-block: 2rem;
+}
+
+.card-body {
+  margin-top: 2.5rem;
+  max-width: 500px;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.user-card {
+  font-size: 1rem;
+  box-shadow: 0 0.75rem 1rem rgba(0, 0, 0, 0.2);
+  max-width: 250px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  flex-shrink: 0;
+}
+
+.download-link {
+  display: inline;
+}
+
+ul.icon-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+li .icon-button {
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+  ul.icon-list {
+    margin-inline: auto;
+  }
+}

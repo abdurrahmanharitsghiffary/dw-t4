@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Contact Me pages" />
+    <link rel="stylesheet" href="./assets/css/navbar.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/input.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <title>Contact Me</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul class="nav-list">
+          <li>
+            <img
+              src="./assets/img/du.png"
+              alt="Dumbways icon"
+              class="nav-brand"
+            />
+          </li>
+          <li>
+            <a href="./index.html" class="nav-link">Home</a>
+          </li>
+          <li>
+            <a href="./myProject.html" class="nav-link">My Project</a>
+          </li>
+        </ul>
+        <a href="./contactForm.html" class="contact-button">Contact Me</a>
+      </nav>
+    </header>
+    <main class="container">
+      <form class="form" id="contact-form">
+        <h1 class="fw-900">GET IN TOUCH</h1>
+        <div class="input-wrapper">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" />
+          <p class="error-message"></p>
+        </div>
+        <div class="input-wrapper">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" />
+          <p class="error-message"></p>
+        </div>
+        <div class="input-wrapper">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" />
+          <p class="error-message"></p>
+        </div>
+        <div class="input-wrapper">
+          <label for="subject">Subject</label>
+          <select name="subject" id="subject">
+            <option value="Frontend Developer">Frontend Developer</option>
+            <option value="Backend Developer">Backend Developer</option>
+            <option value="Fullstack Developer">Fullstack Developer</option>
+          </select>
+          <p class="error-message"></p>
+        </div>
+        <div class="input-wrapper">
+          <label for="message">Your Message</label>
+          <textarea id="message" cols="30" rows="10" name="message"></textarea>
+          <p class="error-message"></p>
+        </div>
+        <button type="submit" class="button button-dark fw-bold end">
+          Submit
+        </button>
+      </form>
+    </main>
+    <script type="text/javascript" src="./assets/script/index.js"></script>
+  </body>
+</html>
